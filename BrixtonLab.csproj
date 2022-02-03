@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+    <CopyRefAssembliesToPublishDirectory>false</CopyRefAssembliesToPublishDirectory>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="Views\Dashboard\Index.cshtml" />
+    <None Include="Views\Dashboard\_dashboardCountCards.cshtml" />
+    <None Include="wwwroot\assets\js\custom\apps\chat\chat.js" />
+    <None Include="wwwroot\assets\js\custom\intro.js" />
+    <None Include="wwwroot\assets\js\custom\modals\create-app.js" />
+    <None Include="wwwroot\assets\js\custom\modals\upgrade-plan.js" />
+    <None Include="wwwroot\assets\js\custom\widgets.js" />
+    <None Include="wwwroot\assets\js\scripts.bundle.js" />
+    <None Include="wwwroot\assets\media\flags\france.svg" />
+    <None Include="wwwroot\assets\media\flags\germany.svg" />
+    <None Include="wwwroot\assets\media\flags\japan.svg" />
+    <None Include="wwwroot\assets\media\flags\spain.svg" />
+    <None Include="wwwroot\assets\media\flags\united-states.svg" />
+    <None Include="wwwroot\assets\media\icons\ecm001.svg" />
+    <None Include="wwwroot\assets\media\icons\ecm006.svg" />
+    <None Include="wwwroot\assets\media\logos\logo-1-dark.svg" />
+    <None Include="wwwroot\assets\media\logos\logo-2.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\bebo.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\figma-1.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\google-icon.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\kickstarter.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\leaf.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\plurk.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\telegram.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\tower.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\tvit.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\vimeo.svg" />
+    <None Include="wwwroot\assets\media\svg\brand-logos\volicity-9.svg" />
+    <None Include="wwwroot\assets\media\svg\card-logos\american-express.svg" />
+    <None Include="wwwroot\assets\media\svg\card-logos\mastercard.svg" />
+    <None Include="wwwroot\assets\media\svg\card-logos\visa.svg" />
+    <None Include="wwwroot\assets\media\svg\files\css.svg" />
+    <None Include="wwwroot\assets\media\svg\files\doc.svg" />
+    <None Include="wwwroot\assets\media\svg\files\pdf.svg" />
+    <None Include="wwwroot\assets\media\svg\misc\infography.svg" />
+    <None Include="wwwroot\assets\plugins\custom\fullcalendar\fullcalendar.bundle.js" />
+    <None Include="wwwroot\assets\plugins\global\plugins.bundle.js" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation" Version="5.0.12" />
+  </ItemGroup>
+
+</Project>
