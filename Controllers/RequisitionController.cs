@@ -24,5 +24,9 @@ namespace BrixtonLab.Controllers
         {
             return View();
         }
+        public IActionResult BloodReqLisReport()
+        {
+            return View();
+        }
     }
 }
