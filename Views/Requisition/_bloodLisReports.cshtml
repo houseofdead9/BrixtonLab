@@ -32,7 +32,7 @@
         <!--begin::Table container-->
         <div class="table-responsive">
             <!--begin::Table-->
-            <table class="table align-middle gs-0 gy-4">
+            <table class="table table-hover align-middle gs-0 gy-4">
                 <!--begin::Table head-->
                 <thead>
                     <tr class=" text-muted bg-light">
@@ -157,480 +157,486 @@
                 <tbody>
                     @for (var i = 0; i < 10; i++)
                     {
+                        var id = "collapseExample" +i;
+                        <tr data-bs-toggle="collapse" href="#@id" role="button" aria-expanded="false" aria-controls="@id">
 
-                    <tr>
-                        <td class="text-end">
-                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                            </div>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">A1234333 </a>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">02/05/2021</a>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">08/05/2021</a>
-                        </td>
-                        <td>
-                            <a class="btn btn-sm btn-light-primary me-1">View</a>
-                        </td>
-                        <td>
-                            <a class="btn btn-sm btn-light-primary me-1">Report</a>
-                        </td>
-                        <td>
-                            <a class="btn btn-sm btn-light-info me-1">Remove Hold</a>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Preliminary</a>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Jack</a>
-                        </td>
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Elmah</a>
-                        </td>
 
-                        <td>
-                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">08/05/2021</a>
-                        </td>
+                    <td class="text-end">
+                        <div class="form-check form-check-sm form-check-custom form-check-solid">
+                            <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                        </div>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">A1234333 </a>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">02/05/2021</a>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">08/05/2021</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-light-primary me-1">View</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-light-primary me-1">Report</a>
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-light-info me-1">Remove Hold</a>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Preliminary</a>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Jack</a>
+                    </td>
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Elmah</a>
+                    </td>
+
+                    <td>
+                        <a class="text-dark  text-hover-primary d-block mb-1 fs-6">08/05/2021</a>
+                    </td>
 
                     </tr>
-                    }
-                </tbody>
-                <!--end::Table body-->
-            </table>
-            <!--end::Table-->
-        </div>
-        <!--end::Table container-->
+                                    <tr class="collapse" id="@id">
+                                        <td colspan="11">
+                                            <div class="card card-bordered border-danger">
+                                                <div class="card-header bg-danger">
+                                                    <h4 class="card-title text-white">Results</h4>
+                                                </div>
+                                                <div class="card-body py-3 row">
+                                                    <div class="mb-3">
+                                                        <button class="btn btn-sm btn-success">Save</button>
+                                                        <button class="btn btn-sm btn-info">Preview</button>
+                                                        <button class="btn btn-sm btn-primary">Validate</button>
+                                                        <button class="btn btn-sm btn-warning">Transfer</button>
+                                                        <button class="btn btn-sm btn-danger">Reject</button>
+                                                        <button class="btn btn-sm btn-dark">TNP</button>
+                                                    </div>
+                                                    <div class="card card-bordered border-primary p-0 mb-10">
+                                                        <div class="card-header bg-primary">
+                                                            <h4 class="card-title text-white">COVID-19</h4>
+                                                        </div>
+                                                        <!--begin::Table container-->
+                                                        <div class="card-body">
+                                                            <div class="table-responsive">
+                                                                <!--begin::Table-->
+                                                                <table class="table align-middle gs-0 gy-4">
+                                                                    <!--begin::Table head-->
+                                                                    <thead>
+                                                                        <tr class=" text-success bg-light">
+                                                                            <th class="ps-4 rounded-start">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input" type="checkbox" value="1" data-kt-check="true" data-kt-check-target=".widget-9-check">
+                                                                                </div>
+                                                                            </th>
+                                                                            <th class="">Test Name</th>
+                                                                            <th class="">Result Value</th>
+                                                                            <th class="">Reference</th>
+                                                                            <th class="">Units</th>
+                                                                            <th class="">TNP</th>
+                                                                            <th class="">Flag</th>
+                                                                            <th class="">Canned Comments</th>
+                                                                            <th class="">Lab Comments</th>
+                                                                            <th class="">Performing Lab</th>
+                                                                            <th class="rounded-end">Validation</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <!--end::Table head-->
+                                                                    <!--begin::Table body-->
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td colspan="10">
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">All Tests</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Direct LDL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">100.00</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">H</a>
+                                                                            </td>
 
 
-        <div class="card card-bordered border-danger">
-            <div class="card-header bg-danger">
-                <h4 class="card-title text-white">Results</h4>
+                                                                            <td>
+                                                                                <select class="form-control  form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full  form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">11/02/2021 6:34PM</a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td colspan="10">
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien Evaluation</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien A1 (Apo A)</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-115.00</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien B (APO B)</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-89.90</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien B/A1 Ratio</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-76.90</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">%</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+
+
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td colspan="10">
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Billirubin Fractionated</a>
+                                                                            </td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Total Billirubin</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-1.50</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Direct Billirubin</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-0.30</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <td class="">
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Indirectr Billirubin (Calculated)</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <input type="text" class="form-control form-control-sm" name="name" value="" />
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">%</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="form-check form-check-sm form-check-custom form-check-solid">
+                                                                                    <input class="form-check-input widget-9-check" type="checkbox" value="1">
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <select class="form-control form-control-sm">
+                                                                                    <option value="detcted">Select</option>
+                                                                                    <option value="detcted">Detected</option>
+                                                                                </select>
+                                                                            </td>
+                                                                            <td>
+                                                                                <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
+                                                                            </td>
+
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
+                                                                            </td>
+                                                                            <td>
+                                                                                <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
+                                                                            </td>
+
+                                                                        </tr>
+
+                                                                    </tbody>
+                                                                    <!--end::Table body-->
+                                                                </table>
+                                                                <!--end::Table-->
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-10 mb-5 form-group">
+                                                        <label>Report Comments:</label>
+                                                        <textarea rows="2" class="form-control w-full" placeholder="Add Comments here"></textarea>
+                                                    </div>
+                                                    <div class="col-10 mb-5 form-group">
+                                                        <label>Critical Notice</label>
+                                                        <textarea rows="2" class="form-control w-full" placeholder="Add Notes here"></textarea>
+                                                    </div>
+
+                                                    <div class="row col-10">
+
+                                                        <div class="col-4">
+                                                            <button class="btn btn-sm btn-success btn-sm">Save</button>
+                                                            <button class="btn btn-sm btn-danger">Cancel</button>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <!--end::Table container-->
+                                                </div>
+
+                                            </div>
+                                        </td>
+                                    </tr>
+}
+                    </tbody>
+                    <!--end::Table body-->
+                </table>
+                <!--end::Table-->
             </div>
-            <div class="card-body py-3 row">
-                <div class="mb-3">
-                    <button class="btn btn-sm btn-success">Save</button>
-                    <button class="btn btn-sm btn-info">Preview</button>
-                    <button class="btn btn-sm btn-primary">Validate</button>
-                    <button class="btn btn-sm btn-warning">Transfer</button>
-                    <button class="btn btn-sm btn-danger">Reject</button>
-                    <button class="btn btn-sm btn-dark">TNP</button>
-                </div>
-                <div class="card card-bordered border-primary p-0 mb-10">
-                    <div class="card-header bg-primary">
-                        <h4 class="card-title text-white">COVID-19</h4>
-                    </div>
-                    <!--begin::Table container-->
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <!--begin::Table-->
-                            <table class="table align-middle gs-0 gy-4">
-                                <!--begin::Table head-->
-                                <thead>
-                                    <tr class=" text-success bg-light">
-                                        <th class="ps-4 rounded-start">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input" type="checkbox" value="1" data-kt-check="true" data-kt-check-target=".widget-9-check">
-                                            </div>
-                                        </th>
-                                        <th class="">Test Name</th>
-                                        <th class="">Result Value</th>
-                                        <th class="">Reference</th>
-                                        <th class="">Units</th>
-                                        <th class="">TNP</th>
-                                        <th class="">Flag</th>
-                                        <th class="">Canned Comments</th>
-                                        <th class="">Lab Comments</th>
-                                        <th class="">Performing Lab</th>
-                                        <th class="rounded-end">Validation</th>
-                                    </tr>
-                                </thead>
-                                <!--end::Table head-->
-                                <!--begin::Table body-->
-                                <tbody>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td colspan="10">
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">All Tests</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
+            <!--end::Table container-->
 
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Direct LDL</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">100.00</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">H</a>
-                                        </td>
-
-
-                                        <td>
-                                            <select class="form-control  form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full  form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">11/02/2021 6:34PM</a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td colspan="10">
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien Evaluation</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien A1 (Apo A)</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-115.00</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien B (APO B)</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-89.90</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Apolipoprotien B/A1 Ratio</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-76.90</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">%</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">TNP</a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-
-
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td colspan="10">
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Billirubin Fractionated</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Total Billirubin</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-1.50</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Direct Billirubin</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">0.00-0.30</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">mg/dL</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-                                        <td class="">
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Indirectr Billirubin (Calculated)</a>
-                                        </td>
-                                        <td>
-                                            <input type="text" class="form-control form-control-sm" name="name" value="" />
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">%</a>
-                                        </td>
-                                        <td>
-                                            <div class="form-check form-check-sm form-check-custom form-check-solid">
-                                                <input class="form-check-input widget-9-check" type="checkbox" value="1">
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-                                        <td>
-                                            <select class="form-control form-control-sm">
-                                                <option value="detcted">Select</option>
-                                                <option value="detcted">Detected</option>
-                                            </select>
-                                        </td>
-                                        <td>
-                                            <textarea class="form-control w-full form-control-sm" rows="1"></textarea>
-                                        </td>
-
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6">Demo Labs</a>
-                                        </td>
-                                        <td>
-                                            <a class="text-dark  text-hover-primary d-block mb-1 fs-6"></a>
-                                        </td>
-
-                                    </tr>
-
-                                </tbody>
-                                <!--end::Table body-->
-                            </table>
-                            <!--end::Table-->
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-10 mb-5 form-group">
-                    <label>Report Comments:</label>
-                    <textarea rows="2" class="form-control w-full" placeholder="Add Comments here"></textarea>
-                </div>
-                <div class="col-10 mb-5 form-group">
-                    <label>Critical Notice</label>
-                    <textarea rows="2" class="form-control w-full" placeholder="Add Notes here"></textarea>
-                </div>
-
-                <div class="row col-10">
-
-                    <div class="col-4">
-                        <button class="btn btn-sm btn-success btn-sm">Save</button>
-                        <button class="btn btn-sm btn-danger">Cancel</button>
-                    </div>
-                </div>
-
-
-                <!--end::Table container-->
-            </div>
 
         </div>
+        <!--begin::Body-->
     </div>
-    <!--begin::Body-->
-</div>

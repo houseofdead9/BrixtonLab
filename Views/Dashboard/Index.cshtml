@@ -214,7 +214,7 @@
             pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
         },
         series: [{
-            name: 'Delivered amount',
+            name: 'Percentage',
             data: [
                 ['CGX', 56],
                 ['TOX', 13],
@@ -271,22 +271,21 @@
         },
         series: [{
             type: 'pie',
-            name: 'Browser share',
+            name: 'Percentage',
             data: [
                 {
-                    name: 'Pending',
-                    y: 12.8,
+                    name: 'New Orders',
+                    y: 244,
                     sliced: true,
                     selected: true
                 },
-                ['Collected', 45.0],
-                ['Send out Pending Orders', 26.8],
-                ['Ready To Ship', 8.5],
-                ['Rejected', 6.2],
-                ['Approved', 0.7],
-                ['Completed', 0.7],
-                ['Send To Billing', 0.7],
-                ['Validated', 0.7]
+                ['Pending Orders', 31],
+                ['New Results', 3],
+                ['Validated', 45],
+                ['Send To Billing', 2],
+                ['Rejected', 1],
+                ['Missing Info', 4],
+                ['Completed', 121],
             ]
         }],
         responsive: {
