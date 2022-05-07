@@ -12,5 +12,9 @@ namespace BrixtonLab.Controllers
         {
             return View();
         }
+        public IActionResult ComingSoon()
+        {
+            return View();
+        }
     }
 }
