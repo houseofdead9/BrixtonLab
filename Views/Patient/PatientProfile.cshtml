@@ -1,0 +1,76 @@
+﻿
+<style type="text/css">
+    .highcharts-credits {
+        display: none;
+    }
+</style>
+
+<!--begin::Toolbar-->
+<div class="toolbar" id="kt_toolbar">
+    <!--begin::Container-->
+    <div id="kt_toolbar_container" class="container-fluid d-flex flex-stack">
+        <!--begin::Page title-->
+        <div data-kt-swapper="true" data-kt-swapper-mode="prepend" data-kt-swapper-parent="{default: '#kt_content_container', 'lg': '#kt_toolbar_container'}" class="page-title d-flex align-items-center flex-wrap me-3 mb-5 mb-lg-0">
+            <!--begin::Title-->
+            <h1 class="d-flex align-items-center text-dark fw-bolder fs-3 my-1">
+                Patient
+                <!--begin::Separator-->
+                <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
+                <!--end::Separator-->
+                <!--begin::Description-->
+                <small class="text-muted fs-7 fw-bold my-1 ms-1">View Patient</small>
+                <!--end::Description-->
+            </h1>
+            <!--end::Title-->
+        </div>
+        <!--end::Page title-->
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Toolbar-->
+<!--begin::Post-->
+<div class="post d-flex flex-column-fluid RenderBodyContainer" id="kt_post">
+    <!--begin::Container-->
+    <div id="kt_content_container">
+        <div class="flex-lg-row-fluid ms-lg-15">
+            <!--begin:::Tabs-->
+            <ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-bold mb-8">
+                <!--begin:::Tab item-->
+                <li class="nav-item">
+                    <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_user_view_overview_tab">Overview</a>
+                </li>
+                <!--end:::Tab item-->
+                <!--begin:::Tab item-->
+                <li class="nav-item">
+                    <a class="nav-link text-active-primary pb-4" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_user_view_overview_account">Account</a>
+                </li>
+                <!--end:::Tab item-->
+            </ul>
+            <!--end:::Tabs-->
+            <!--begin:::Tab content-->
+            <div class="tab-content" id="myTabContent">
+                <!--begin:::Tab pane-->
+                <div class="fade active show" id="kt_user_view_overview_tab" role="tabpanel">
+                    @Html.Partial("_patientProfile")
+                </div>
+                <!--end:::Tab pane-->
+                <!--begin:::Tab pane-->
+                <div class="tab-pane fade" id="kt_user_view_overview_account" role="tabpanel">
+                    @Html.Partial("_patientAccount")
+                </div>
+                <!--end:::Tab pane-->
+            </div>
+            <!--end:::Tab content-->
+        </div>
+
+      
+
+
+    </div>
+    <!--end::Container-->
+</div>
+<!--end::Post-->
+
+
+
+
