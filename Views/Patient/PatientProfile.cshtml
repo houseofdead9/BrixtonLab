@@ -32,17 +32,21 @@
 <div class="post d-flex flex-column-fluid RenderBodyContainer" id="kt_post">
     <!--begin::Container-->
     <div id="kt_content_container">
-        <div class="flex-lg-row-fluid ms-lg-15">
+        <div class="flex-lg-row-fluid">
             <!--begin:::Tabs-->
             <ul class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-bold mb-8">
                 <!--begin:::Tab item-->
-                <li class="nav-item">
-                    <a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" href="#kt_user_view_overview_tab">Overview</a>
+                <li class="nav-item" role="presentation">
+                    @*<a class="nav-link text-active-primary pb-4 active" data-bs-toggle="tab" data-bs-targer href="#kt_user_view_overview_tab">Overview</a>*@
+                    <button class="nav-link text-active-primary pb-4 active" id="patient-overview-tab" data-bs-toggle="tab" data-bs-target="#kt_user_view_overview_tab" type="button" role="tab" aria-controls="kt_user_view_overview_tab" aria-selected="true">Overview</button>
+
                 </li>
                 <!--end:::Tab item-->
                 <!--begin:::Tab item-->
-                <li class="nav-item">
-                    <a class="nav-link text-active-primary pb-4" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_user_view_overview_account">Account</a>
+                <li class="nav-item" role="presentation">
+                    @*<a class="nav-link text-active-primary pb-4" data-kt-countup-tabs="true" data-bs-toggle="tab" href="#kt_user_view_overview_account">Account</a>*@
+                    <button class="nav-link text-active-primary pb-4" id="patient-account-tab" data-bs-toggle="tab" data-bs-target="#kt_user_view_overview_account" type="button" role="tab" aria-controls="kt_user_view_overview_account" aria-selected="true">Account</button>
+
                 </li>
                 <!--end:::Tab item-->
             </ul>
@@ -50,12 +54,12 @@
             <!--begin:::Tab content-->
             <div class="tab-content" id="myTabContent">
                 <!--begin:::Tab pane-->
-                <div class="fade active show" id="kt_user_view_overview_tab" role="tabpanel">
+                <div class=" tab-pane fade active show" id="kt_user_view_overview_tab" role="tabpanel"  aria-labelledby="patient-overview-tab">
                     @Html.Partial("_patientProfile")
                 </div>
                 <!--end:::Tab pane-->
                 <!--begin:::Tab pane-->
-                <div class="tab-pane fade" id="kt_user_view_overview_account" role="tabpanel">
+                <div class="tab-pane fade" id="kt_user_view_overview_account" role="tabpanel"  aria-labelledby="patient-overview-tab">
                     @Html.Partial("_patientAccount")
                 </div>
                 <!--end:::Tab pane-->

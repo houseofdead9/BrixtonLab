@@ -11,7 +11,7 @@
                 <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
                 <!--end::Separator-->
                 <!--begin::Description-->
-                <small class="text-muted fs-7 fw-bold my-1 ms-1">View Patrients</small>
+                <small class="text-muted fs-7 fw-bold my-1 ms-1">View Patients</small>
                 <!--end::Description-->
             </h1>
             <!--end::Title-->
@@ -29,13 +29,13 @@
             <div class="card-body">
                 <ul class="nav nav-tabs px-8" id="myTab" role="tablist">
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Active Patients</button>
+                        <a class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Active Patients</a>
                     </li>
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Deleted Patients</button>
+                        <a class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Deleted Patients</a>
                     </li>
                 </ul>
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content" id="f">
                     <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
                         @Html.Partial("_patientsGrid")
                     </div>
